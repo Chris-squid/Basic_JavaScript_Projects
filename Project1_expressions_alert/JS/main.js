@@ -18,13 +18,16 @@ var Dad = Dad.fontcolor("green");
 var Mom = Mom.fontcolor("purple");
 document.write(Dad + Mom + Family);
 
-var X,Y; 
+var X,Y; //made a simple expression
 
 X = 5;
 Y = 6;
 
 document.write(X + Y);
 
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
 
 
 
