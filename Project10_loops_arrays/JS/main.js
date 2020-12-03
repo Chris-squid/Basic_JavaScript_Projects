@@ -63,4 +63,32 @@ function pI() {
 }
 document.getElementById("demo").innerHTML = pI();
 
+let car = {
+    make: "Dodge ",
+    model: "Viper ",
+    year: "2021 ",
+    color: "red ",
+    description : function() {
+        return "The car is a " + this.year + this.color + this.make + this.model;
+        }
+};
+document.getElementById("Car_Object").innerHTML = car.description();
+
+//BREAK LOOP//
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+    if (i === 3) { break; }
+    text += "The number is " + i + "<br>"
+}
+document.getElementById("break").innerHTML = text;
+
+//CONTINUE LOOP//
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+    if (i === 3) { continue; }
+    text += "The number is " + i + "<br>";
+}
+document.getElementById("cont_loop").innerHTML = text;
 
