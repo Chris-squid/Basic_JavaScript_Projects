@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+    <script>
+        $(document).ready(function() {
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+             // Created IDs within the p and body elements for HTML and jQuery link up
+            );
+            $("#2").css({"color":"red"});  //effecting the css and color of font
+            $("#3").click(function() {  //using the .click and hide method
+                $('h1').hide(500).delay(1500).show(300); //.hide.delay.show jQuery
+            
+                     
+            
+            });
+            $("#1").css({"color":"gold"}).hide("slow").show("fast"); //trying out some events in jQuery with css .hide .fast .delay
+        });
+
+    </script>
+</html>
